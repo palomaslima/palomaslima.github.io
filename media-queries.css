@@ -1,0 +1,56 @@
+/*##################################################MEDIA-QUERIES####################################################*/
+
+/*Extra small devices (smart phones, less than 34em)*/
+@media (max-width: 20em) { 
+
+}
+
+
+/*Small devices (phones, tablets less than 48em)*/
+@media (max-width: 47.9em) {
+.container1{height: 600px; background-position-x: 69%; }
+.container1 .btn-descer{margin-top: 70%;}
+.container2{padding-top: 3% !important;}
+.container2 .bloco-work{margin-top: 0px;}
+.container3 .texto-container3{padding-top: 5%;}
+.container3 img{margin: 0px !important; float: left !important; width: 50%;}
+.img-cont3-2{box-shadow: 8px 7px 8px rgba(50, 50, 50, 0.5);}
+
+
+}
+
+
+/*Tablets*/
+@media (min-width: 47em) and (max-width: 60em){
+.container3 .animation-img{transition-delay: 20s;}
+.container5 .texto-equipe{width: 100% !important;}
+
+}
+
+/*small laptops */
+@media (min-width: 61.9em) and (max-width: 74.9em) {
+.container3 .animation-img{transition-delay: 20s;}
+
+
+}
+
+
+
+/*Laptops*/
+@media (min-width: 74.9em) and (max-width: 99em){
+
+}
+
+/*Desktop*/
+@media (min-width: 100em){
+
+}
+
+
+
+/*Large Desktop*/
+@media(min-width:120em){
+
+
+}
+

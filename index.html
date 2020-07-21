@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Template</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <link rel="stylesheet" type="text/css" href="media-queries.css">
+        <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+
+
+
+    </head>
+
+    <body>
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <button id="menu-fechar"></button>
+            
+            <ul class="sidebar-nav">
+                <li class=""><a href="#home">HOME</a></li>
+                <li class=""><a href="#sobre">SERVIÇOS</a></li>
+                <li class=""><a href="#servicos">SOBRE</a></li>
+                <li class=""><a href="#contato" title="">CONTATO</a></li>           
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <header>
+            <div class="container-fluid topo" id="menu">
+                <div class="container">
+
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-default navbar-expand-lg hidden-md-down">
+                            <div id="barra-navegacao" style="text-align: right;">
+                                <ul class="nav  mr-auto">
+                                    <li class=""><a href="#home">Home</a></li>
+                                    <li class=""><a href="#sobre">Sobre</a></li>
+                                    <li class=""><a href="#skills">Skills</a></li>
+                                    <li class=""><a href="#skills">Projetos</a></li>
+                                </ul>
+                            </div>
+                        </nav> 
+                        <button id="menu-toggle" class="hidden-lg-up"></button>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </header>
+
+        <!-- INTRODUCAO -->
+
+        <section class="container-fluid container1" id="home">
+            <div class="container texto-introducao">
+                <h1 class="titulo-introducao">Olá. Me chamo Paloma. Full-Stack Developer </h1>
+                <button class="btn-descer"><i class="fa fa-chevron-up" style="transform: rotate(180deg); margin-top: 25%;"></i></button>
+            </div>
+        </section>
+
+        <!-- FIM INTRODUCAO -->
+
+        <!-- TEXTO SOBRE -->
+
+        <section class="container container2" id="sobre">   
+                <h2 class=titulo-container>Sobre</h2> 
+
+            <div class="row">
+                <div class="col-md-5 foto">
+                    <img src="img/sobre.png">
+                </div>
+                <div class="col-md-7 sobre-texto">
+                    <h3 style="font-weight: bold;"> Me chamo Paloma </h3>
+                    <p>Sou formada em Análise e Desenvolvimento de Sistemas pela Universidade Paulista.
+                        Possuo curso técnico de informática e conhecimentos em linguagens como Java, PHP, Angular 
+                        e desenvolvimento web com HTML, CSS e javascript.
+                    </p>
+                    <p>Certificada com cursos de Java, Angular, Desenvolvimento para Web, Android Studio, Photoshop e SCRUM.
+                    </p>
+                    <p>Apaixonada por livros, piano, séries e sempre aberta a descobrir e adquirir novas habilidades e experiências.</p>
+                    <a href="https://www.linkedin.com/in/paloma-silva-lima/" target="_blank"><img src="img/linkedin.png"></a>
+                    <a href="https://github.com/palomaslima" target="_blank"><img src="img/git.png"></a>
+                    <a href="mailto:palomaslima21@gmail.com" target="_blank"><img src ="img/email.png"></a>
+                    <a href="https://www.facebook.com/21dejaneiro/" target="_blank"><img src ="img/facebook.png"></a>
+                    <a href="https://www.instagram.com/_21dejaneiro/" target="_blank"><img src ="img/instagram-esbocado.png"></a>
+                </div>
+            </div>
+                
+        </section>
+
+        <!-- FIM TEXTO COMO FUNCIONA -->
+
+        <!-- SKILLS -->
+
+        <section class="container-fluid container3" id="skills">
+
+            <div class="row">
+                <div class="container">
+                    <div class="col-md-6 skills">
+                        <h1 class="titulo-container">Skills</h1>
+                        <div class="skill">
+                            <p><img src="img/html-5.png">
+                                HTML</p>
+                        </div>
+
+                        <div class="skill">
+                            <p><img src="img/css-3.png">
+                            CSS</p>
+                        </div>
+
+                        <div class="skill">
+                            <p><img src="img/javascript.png">
+                            Javascript</p>
+                        </div>
+
+                        <div class="skill">
+                            <p><img src="img/java.png">
+                            Java</p>
+                        </div>
+
+                        <div class="skill">
+                            <p><img src="img/camunda-modeler_89515.png">
+                            Camunda</p>
+                        </div>
+
+                        <div class="skill">
+                            <p><img src="img/Angular_full_color_logo.svg.png">
+                            Angular</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 skill-design">
+                        <img src="img/designs.png">
+                    </div>
+            </div>
+            </div>
+            <div class="cv">
+                <a href="img/CV-PalomaSilva.pdf" target="_blank" download="CV-PalomaSilva.pdf"><button class="download">DOWNLOAD CV</button></a>
+            </div>
+            
+        </section>
+
+        <!-- FIM SKILLS -->
+
+        <footer>
+            <div class="container-fluid rodape">
+            <div class="copyright">
+                <p>© 2020</p>
+            </div>
+        </footer>
+
+        <button class="btn-voltar-topo"><i class="fa fa-chevron-up"></i></button>
+
+    </body>
+
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- SCRIPT MENU FIXO -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                jQuery(window).scroll(function () {
+                    if (jQuery(this).scrollTop() > 100) {
+                         $("#menu").addClass("topo-menu-fixo");
+                         
+                    } else {
+                         $("#menu").removeClass("topo-menu-fixo");
+                    }
+               
+                });
+
+                // SCRIPT VOLTAR TOPO
+
+                $(".btn-voltar-topo").click(function(event){        
+                    event.preventDefault();
+                    $('html, body').animate({scrollTop:0}, 'slow');
+                 });
+
+
+
+
+                $(".nav li a").click(function(event){        
+                    event.preventDefault();
+                    var id = $(this).attr('href'), 
+                    targetOffset = $(id).offset().top;
+
+                    $('html, body').animate({ 
+                    scrollTop: targetOffset - 100
+                   }, 500);
+                 });
+
+                
+
+                // ANIMAÇÂO SERVIÇOS
+
+               jQuery(window).scroll(function () {
+                    if (jQuery(this).scrollTop() > 700) {
+                         $(".skill").addClass("animation-img");
+                         $(".skill-design img").addClass("animation-img");
+                         $(".img-cont3-3").addClass("animation-img");
+                         console.log('teste');
+                    } 
+               
+                }); 
+
+               // MENU MOBILE
+
+               $("#menu-toggle").click(function(event){           
+                    $("#sidebar-wrapper").addClass("visible");
+                 });
+
+               $("#menu-fechar").click(function(event){           
+                    $("#sidebar-wrapper").removeClass("visible");
+                 });
+
+
+                 // FUNÇAO MAQUINA INTRODUCAO
+                 function typeWrite(elemento){
+                        const textoArray = elemento.innerHTML.split('');
+                        elemento.innerHTML = ' ';
+                        textoArray.forEach(function(letra, i){   
+                        
+                        setTimeout(function(){
+                            elemento.innerHTML += letra;
+                        }, 75 * i)
+
+                        });
+                }
+                const titulo = document.querySelector('.titulo-introducao');
+                typeWrite(titulo);
+
+                
+
+            });
+
+            
+        </script>
+</html>
+
+
+

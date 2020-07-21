@@ -1,0 +1,112 @@
+:root{
+   --yellow: #fcd03c;
+}
+
+.container-fluid{padding: 0px !important;}
+body{color: #222 !important; font-family: 'Roboto', sans-serif !important; overflow-x: hidden;}
+
+/*TOPO*/
+.topo-menu-fixo{width: 100%; transition: 0.5s; z-index: 1; background: #000;}
+.topo-menu-fixo h2{margin-top: 7% !important;}
+.topo-menu-fixo #barra-navegacao{padding-top: 0px !important;}
+.topo-menu-fixo #barra-navegacao li a{color: #fff;}
+.topo-menu-fixo #menu-toggle{margin-top: 11%;}
+.topo{z-index: 1; position: fixed; width: 100%;}
+
+
+/*MENU*/
+#barra-navegacao{padding-top: 2%; background: transparent; text-align: center;}
+#barra-navegacao li{display: inline;  padding-left: 7px;}
+#barra-navegacao li a{color: #fff; padding: 10px 10px 10px; font-weight: bold;}
+#barra-navegacao li a:hover{text-decoration: none;}
+#barra-navegacao li a:focus{color: var(--yellow); text-decoration: none;}
+#barra-navegacao .ativo a{color:var(--yellow); }
+#barra-navegacao .ativo a:hover{color:var(--yellow);}
+
+/*MENU TOGGLE*/
+#menu-toggle{width: 27px; height: 24px; background: url(img/menu.png); border:none; background-repeat: no-repeat; cursor: pointer; float: right; margin-top: 3%;}
+#menu-fechar{width: 27px; height: 24px; background: url(img/close.png); border:none; background-repeat: no-repeat; float: right; z-index: 2; margin-top: 23%; margin-right: 10%; cursor: pointer; }
+#sidebar-wrapper{width: 100%; position: fixed; height: 100%; z-index: 1; background: rgba(0,0,0,0.9); display: none;}
+#sidebar-wrapper li{list-style-type: none; text-align: center; padding-bottom: 2%;}
+#sidebar-wrapper li a{color: #fff; text-decoration: none !important; font-size: 2em;}
+#sidebar-wrapper ul{padding-top: 40%;}
+
+.visible{display: block !important; -webkit-transition: all 0.5s ease;}
+.hidden{display: none;}
+
+/*SEÇÃO 1*/
+.container1{background: url('img/fundo-inicio.png'); height: 100vh;}
+.texto-introducao{text-align: center; padding-top: 20%; margin-left: 5%;}
+.texto-introducao h1{font-size: 60px;color: #fff; font-family: 'Roboto Mono', monospace; font-weight: bold;}
+.container1 .btn-descer{transform: rotate(180deg); border-radius: 50%; border: none; width: 45px; height: 45px; background: transparent; color: var( --yellow); cursor: pointer; margin-top: 5%;
+animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite; cursor: none;}
+
+/*SEÇÃO 2*/
+.container2{padding: 2% 0px 2% 0px;}
+.titulo-container{font-size: 30px; margin-bottom: 2%; color: var(--yellow); text-align: center;}
+.titulo-container::after{ content: ""; width: 100px; height: 2px;  background: var(--yellow); display: block; margin: 5px auto;} 
+
+.container2 .foto img{width: 80%;}
+.container2 .sobre-texto img{width: 30px; margin: 2% 3% 0px 0px; text-align: center;}
+.container2 h3{margin-bottom: 3%;}
+
+.divisao{background: url('img/divisao-banner.jpg'); height: 140px;}
+
+/*SEÇÃO 3*/
+.container3{margin-top: 2%;}
+.animation-img{animation-name: fadeInDown2; animation-duration: 2s; visibility: visible !important;}
+
+.skill{background: #FFF; border-radius: .5rem; box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+   padding: 5px 0px 5px 15px; margin-top: 3%; visibility: hidden;
+}
+
+.skill p{margin: 0px;}
+.skill img{width: 33px; margin-right: 2%;}
+.skill-design img{width: 85%; float: right; visibility: hidden;}
+
+.cv{text-align: center;}
+.download{margin-bottom: 2%; background: transparent; border: 2px solid #000;padding: 5px 10px; cursor: pointer;}
+
+/*FOOTER*/
+.copyright{text-align: center; color: #fff; background: #000;}
+.copyright p{margin: 0px;}
+
+/*VOLTAR TOPO*/
+.btn-voltar-topo{right: 10px; position: fixed; bottom: 10px; border-radius: 50%; border: none; width: 45px; height: 45px; background: #000; color: var(--yellow); cursor: pointer;}
+.btn-voltar-topo:hover{background: #999; color: #222;}
+
+@font-face {
+     font-family: 'Quantum';
+     src: url('fonts/Quantum.otf');
+}
+
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, 20px, 0); }
+}
+
+@keyframes fadeInDown {
+   0% {
+      opacity: 0.5;
+      transform: translateY(-100px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+} 
+
+@keyframes fadeInDown2 {
+   0% {
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-200px);
+   }
+   100% {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+   }
+} 
