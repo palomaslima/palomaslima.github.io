@@ -8,7 +8,7 @@
 
 /*Small devices (phones, tablets less than 48em)*/
 @media (max-width: 47.9em) {
-.container1 .btn-descer{margin-top: 70%;}
+.titulo-logo{}
 .container2{padding-top: 3% !important;}
 .container2 .foto{text-align: center;}
 .container2 .sobre-texto{text-align: center; margin-top: 3%;}
