@@ -118,3 +118,32 @@ animation: bounce 0.5s;
       opacity: 100%;
    }
 } 
+
+@keyframes bounce {
+   from { transform: translate3d(0, 0, 0);     }
+   to   { transform: translate3d(0, 20px, 0); }
+ }
+ 
+ @keyframes fadeInDown {
+    0% {
+       opacity: 0.5;
+       transform: translateY(-100px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ } 
+ 
+ @keyframes fadeInDown2 {
+    0% {
+       visibility: hidden;
+       opacity: 0;
+       transform: translateY(-200px);
+    }
+    100% {
+       visibility: visible;
+       opacity: 1;
+       transform: translateY(0);
+    }
+ } 
